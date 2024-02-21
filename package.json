@@ -1,0 +1,49 @@
+{
+  "name": "app-skeleton",
+  "version": "1.0.0",
+  "main": "dist/server/index.js",
+  "scripts": {
+    "dev": "concurrently -n webpack,tailwind 'webpack serve --open --mode=development' 'tailwindcss -i ./src/public/input.css -o ./src/public/output.css --watch'",
+    "all": "concurrently -n client,server,tailwind,opener --hide opener --handle-input --default-input-target server 'webpack --mode=development -w' 'nodemon' 'tailwindcss -i ./src/public/input.css -o ./src/public/output.css --watch' 'opener http://localhost:8080'",
+    "build": "tailwindcss -i ./src/public/input.css -o ./src/public/output.css && webpack --mode=production",
+    "start": "node dist/server/index.js"
+  },
+  "devDependencies": {
+    "@invisionag/tailwind": "^3.0.0",
+    "@types/express": "*",
+    "@types/react": "*",
+    "@types/react-dom": "*",
+    "@typescript-eslint/eslint-plugin": "*",
+    "@typescript-eslint/parser": "*",
+    "clean-webpack-plugin": "*",
+    "concurrently": "*",
+    "copy-webpack-plugin": "*",
+    "css-loader": "*",
+    "eslint": "*",
+    "eslint-plugin-import": "*",
+    "eslint-plugin-react": "*",
+    "eslint-plugin-react-functional-set-state": "*",
+    "eslint-plugin-react-hooks": "*",
+    "eslint-plugin-tailwindcss": "^3.14.0",
+    "html-webpack-plugin": "*",
+    "nodemon": "*",
+    "opener": "*",
+    "style-loader": "*",
+    "tailwindcss": "^3.4.1",
+    "terser-webpack-plugin": "*",
+    "ts-loader": "*",
+    "typescript": "*",
+    "webpack": "*",
+    "webpack-cli": "*",
+    "webpack-dev-server": "^4.15.1",
+    "webpack-node-externals": "*"
+  },
+  "dependencies": {
+    "class-variance-authority": "^0.7.0",
+    "css-modules": "^0.3.0",
+    "css-modules-typescript-loader": "^4.0.1",
+    "express": "*",
+    "react": "*",
+    "react-dom": "*"
+  }
+}

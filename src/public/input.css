@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --fg: theme("colors.typography.200");
+  --bg: theme("colors.ui.100");
+  --olive: #99cc66;
+  --orange: #ffcc66;
+  --teal: #66cccc;
+  --blue: #6699cc;
+  --border-width: 8px;
+
+  /*@media (prefers-color-scheme: dark) {*/
+  /*--fg: #e6e6e6;*/
+  /*--bg: #1d1d1d;*/
+  /*--olive: #445500;*/
+  /*--orange: #aa7700;*/
+  /*--teal: #005555;*/
+  /*--blue: #003366;*/
+  /*}*/
+}
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background: var(--bg);
+  color: var(--fg);
+}
