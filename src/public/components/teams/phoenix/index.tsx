@@ -40,15 +40,24 @@ export const Exercise2 = () => (
 
 export const Exercise3 = () => (
   <>
-    Exercise 3
+    Exercise 3 Task 1
     <div className="bg-ui-300 pl-7 h-[15em] w-[33.33vw] flex justify-end items-end">
       Lorem ipsum dolor, sit amet consectetur adipisicing elit.
     </div>
+    Task 2
     <div className="h-[80vh] flex gap-2 flex-col sm:flex-row sm:flex-wrap justify-evenly sm:items-center ">
       {Array.from({ length: 30 }).map((_, i) => (
         // eslint-disable-next-line react/jsx-key
         <Skeleton>Item {i}</Skeleton>
       ))}
+    </div>
+    Task 3
+    <div className="h-[33.33vh] flex items-center justify-start">
+      <Skeleton className="self-end">Item 0</Skeleton>
+      <Skeleton>Item 1</Skeleton>
+      <Skeleton className="self-start">Item 2</Skeleton>
+      <Skeleton>Item 3</Skeleton>
+      <Skeleton className="self-end">Item 4</Skeleton>
     </div>
   </>
 );
