@@ -158,5 +158,20 @@ export const Index = () => (
         <Skeleton key={i}>Item {i}</Skeleton>
       ))}
     </div>
+
+    <p> Exercise 4 - Task 1</p>
+
+    <div className="grid grid-cols-[10rem_1fr_auto] gap-2 border">
+      <img src="/assets/picture.jpg" alt="" className="row-span-3" />
+      <Skeleton />
+      <Skeleton className="w-7" />
+      <Skeleton className="col-span-2" />
+      <Skeleton className="col-span-2" />
+      <Skeleton className="col-span-2 col-start-2" />
+      <Skeleton className="col-span-2" />
+      <Skeleton />
+      <Skeleton />
+      <Skeleton className="col-span-2" />
+    </div>
   </div>
 )
