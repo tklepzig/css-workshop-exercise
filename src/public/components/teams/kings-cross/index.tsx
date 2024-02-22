@@ -1,4 +1,5 @@
 import { cx } from "class-variance-authority"
+import { Skeleton } from "../../Skeleton"
 
 export const Index = () => (
   <div>
@@ -23,6 +24,14 @@ export const Index = () => (
 
     <div className="h-[400px] border px-[calc(50%-50px)] py-[150px]">
       <div className="size-[100px] bg-ui-300">100 x 100px</div>
+    </div>
+
+    <p> Task 3</p>
+
+    <div>
+      <Skeleton />
+      <Skeleton className="ml-[-0.5rem]" />
+      <Skeleton />
     </div>
   </div>
 )
