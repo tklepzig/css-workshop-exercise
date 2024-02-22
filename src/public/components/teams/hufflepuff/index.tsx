@@ -93,5 +93,34 @@ export const Index = () => (
         <footer>From: The Tales of Beedle the Bard</footer>
       </div>
     </div>
+    <div>
+      <div className="flex h-6 w-1/3 items-end justify-end bg-ui-200 pl-7">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+      </div>
+    </div>
+    <div>
+      <div className="flex h-[80vw] flex-wrap items-center justify-between gap-2 overflow-auto border">
+        {Array.from({ length: 30 }).map((_, i) => (
+          // eslint-disable-next-line react/jsx-key
+          <Skeleton className="w-full sm:w-auto">Item {i}</Skeleton>
+        ))}
+      </div>
+    </div>
+    <div>
+      <div className="flex h-[33vw] justify-evenly">
+        <Skeleton className="self-end">1</Skeleton>
+        <Skeleton className="self-center">2</Skeleton>
+        <Skeleton className="self-start">3</Skeleton>
+        <Skeleton className="self-center">4</Skeleton>
+        <Skeleton className="self-end">5</Skeleton>
+      </div>
+    </div>
+    <div>
+      <div className="flex h-[80vw] flex-col gap-2 md:flex-row md:items-start md:justify-end">
+        {Array.from({ length: 10 }).map((_, i) => (
+          <Skeleton key={i}>Item {i}</Skeleton>
+        ))}
+      </div>
+    </div>
   </div>
 );
