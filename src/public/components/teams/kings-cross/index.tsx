@@ -4,7 +4,6 @@ import { Skeleton } from "../../Skeleton"
 export const Index = () => (
   <div>
     <p> Exercise 1 - Task 1</p>
-
     <div className="p-3">
       <ul className="h-[10rem] w-[33%] overflow-auto border">
         {Array.from({ length: 10 }).map((_, i) => (
@@ -21,39 +20,30 @@ export const Index = () => (
       </ul>
     </div>
     <p>Exercise 1 - Task 2</p>
-
     <div className="h-[400px] border px-[calc(50%-50px)] py-[150px]">
       <div className="size-[100px] bg-ui-300">100 x 100px</div>
     </div>
-
     <p>Exercise 1 - Task 3</p>
-
     <div className="relative border">
       <Skeleton className="m-2">1</Skeleton>
       <Skeleton className="relative -left-2 m-2">2</Skeleton>
 
       <Skeleton className="m-2">3 </Skeleton>
     </div>
-
     <p>Exercise 1 - Task 4</p>
-
     <div className="relative min-h-[calc(2rem+47px)] border">
       <h1>Any Headline</h1>
       <div className="absolute bottom-0 left-0 right-0 h-[47px] bg-ui-300">
         Always at the bottom
       </div>
     </div>
-
     <p> Exercise 2 - Task 1</p>
-
     <div className="relative mt-1">
       <Skeleton className="inline-block px-3">1</Skeleton>
       <Skeleton className="relative -top-2 ml-1 inline-block px-3">2</Skeleton>
       <Skeleton className="ml-1 inline-block px-3">3</Skeleton>
     </div>
-
     <p> Exercise 2 - Task 2</p>
-
     <div>
       <div className="w-[50vw] border p-2">
         <Skeleton className="mb-1 w-[33vw]">1/3 of viewport width</Skeleton>
@@ -63,9 +53,7 @@ export const Index = () => (
         <Skeleton className="inline-block w-[47px]">47</Skeleton>
       </div>
     </div>
-
     <p> Exercise 2 - Task 3</p>
-
     <div className="my-4">
       <div className=" border p-2">
         <span className="bg-ui-300 p-4">Inline</span>
@@ -73,9 +61,7 @@ export const Index = () => (
         <span className="ml-6 bg-ui-300 p-4">Inline</span>
       </div>
     </div>
-
     <p> Exercise 2 - Task 4</p>
-
     <div>
       <ul>
         {Array.from({ length: 10 }).map((_, i) => (
@@ -95,18 +81,14 @@ export const Index = () => (
         ))}
       </ul>
     </div>
-
     <p> Exercise 2 - Task 5</p>
-
     <div>
       <input type="checkbox" className="peer" />
       <span className="ml-1 peer-[:hover]:bg-ui-100 peer-[:checked]:font-bold">
         My checkbox
       </span>
     </div>
-
     <p> Exercise 2 - Task 5</p>
-
     <div className="ml-3 w-[50vw] border">
       <div className="group">
         <header className="group-[:hover]:bg-ui-100">
@@ -121,17 +103,13 @@ export const Index = () => (
         <footer>From: The Tales of Beedle the Bard</footer>
       </div>
     </div>
-
     <p> Exercise 3 - Task 1 </p>
-
     <div>
       <div className="flex h-[20rem] w-[33vw] items-end justify-end border pl-7">
         Lorem ipsum dolor, sit amet consectetur adipisicing elit.
       </div>
     </div>
-
     <p> Exercise 3 - Task 2</p>
-
     <div className="overflow-hidden border">
       <div className="flex h-[80vh] flex-col gap-2 sm:flex-row sm:flex-wrap sm:items-center sm:justify-between">
         {Array.from({ length: 30 }).map((_, i) => (
@@ -140,9 +118,7 @@ export const Index = () => (
         ))}
       </div>
     </div>
-
     <p> Exercise 3 - Task 3</p>
-
     <div className="flex h-[33vh] items-center justify-evenly border">
       <Skeleton className="self-end">Item 1</Skeleton>
       <Skeleton>Item 2</Skeleton>
@@ -150,17 +126,13 @@ export const Index = () => (
       <Skeleton>Item 4</Skeleton>
       <Skeleton className="self-end">Item 5</Skeleton>
     </div>
-
     <p> Exercise 3 - Task 4</p>
-
     <div className="flex h-[80vw] flex-col gap-2 border sm:flex-row sm:items-start sm:justify-end">
       {Array.from({ length: 10 }).map((_, i) => (
         <Skeleton key={i}>Item {i}</Skeleton>
       ))}
     </div>
-
     <p> Exercise 4 - Task 1</p>
-
     <div className="grid grid-cols-[10rem_1fr_auto] gap-2 border">
       <img src="/assets/picture.jpg" alt="" className="row-span-3" />
       <Skeleton />
@@ -172,6 +144,58 @@ export const Index = () => (
       <Skeleton />
       <Skeleton />
       <Skeleton className="col-span-2" />
+    </div>
+    <p> Exercise 4 - Task 2</p>
+    <div className="grid h-[80vh] items-center border">
+      <Skeleton className="justify-self-start bg-ui-300">Item 0</Skeleton>
+      <Skeleton className="justify-self-start">Item 1</Skeleton>
+      <Skeleton className="justify-self-end">Item 2</Skeleton>
+      <Skeleton className="justify-self-center">Item 3</Skeleton>
+      <Skeleton>Item 4</Skeleton>
+    </div>
+    <p> Exercise 4 - Task 3</p>
+    <div className="grid auto-cols-[1fr_4fr] grid-flow-col gap-2 border p-3">
+      {Array.from({ length: 6 }).map((_, i) => (
+        // eslint-disable-next-line react/jsx-key
+        <Skeleton>{i}</Skeleton>
+      ))}
+    </div>
+    <p> Exercise 4 - Task 4</p>
+    <div className="grid h-[80vh] grid-cols-[5rem_5rem] grid-rows-[5rem_5rem] content-end items-start justify-center gap-2 border">
+      <Skeleton>1</Skeleton>
+      <Skeleton>2</Skeleton>
+      <Skeleton>3</Skeleton>
+      <Skeleton>4</Skeleton>
+    </div>
+    <p> Exercise 4 - Task 5</p>{" "}
+    <div className="grid grid-cols-[repeat(2,auto_1fr_auto),repeat(2,1fr)] gap-2 border">
+      {Array.from({ length: 8 }).map((_, i) =>
+        i % 3 === 2 ? (
+          <Skeleton key={i} className="w-[5rem]">
+            5rem
+          </Skeleton>
+        ) : (
+          <Skeleton key={i} />
+        )
+      )}
+    </div>
+    <p> Exercise 4 - Task 6</p>
+    <div className="rows-3 grid grid-flow-col border">
+      <section className="row-span-3 grid grid-rows-subgrid">
+        <header>Title</header>
+        <article>Content</article>
+        <footer>Footer</footer>
+      </section>
+      <section className="row-span-3  grid grid-rows-subgrid">
+        <header>Title which breaks onto a new line</header>
+        <article>Content</article>
+        <footer>Footer</footer>
+      </section>
+      <section className=" row-span-3  grid grid-rows-subgrid">
+        <header>Title</header>
+        <article>Content also somewhat longer so it breaks</article>
+        <footer>Footer</footer>
+      </section>
     </div>
   </div>
 )
