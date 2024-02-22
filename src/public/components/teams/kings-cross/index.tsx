@@ -3,7 +3,7 @@ import { Skeleton } from "../../Skeleton"
 
 export const Index = () => (
   <div>
-    <p> Task 1</p>
+    <p> Exercise 1 - Task 1</p>
 
     <div className="p-3">
       <ul className="h-[10rem] w-[33%] overflow-auto border">
@@ -20,18 +20,28 @@ export const Index = () => (
         ))}
       </ul>
     </div>
-    <p> Task 2</p>
+    <p>Exercise 1 - Task 2</p>
 
     <div className="h-[400px] border px-[calc(50%-50px)] py-[150px]">
       <div className="size-[100px] bg-ui-300">100 x 100px</div>
     </div>
 
-    <p> Task 3</p>
+    <p>Exercise 1 - Task 3</p>
 
-    <div>
-      <Skeleton />
-      <Skeleton className="ml-[-0.5rem]" />
-      <Skeleton />
+    <div className="relative border">
+      <Skeleton className="m-2">1</Skeleton>
+      <Skeleton className="relative -left-2 m-2">2</Skeleton>
+
+      <Skeleton className="m-2">3 </Skeleton>
+    </div>
+
+    <p>Exercise 1 - Task 4</p>
+
+    <div className="relative min-h-[calc(2rem+47px)] border">
+      <h1>Any Headline</h1>
+      <div className="absolute bottom-0 left-0 right-0 h-[47px] bg-ui-300">
+        Always at the bottom
+      </div>
     </div>
 
     <p> Exercise 2 - Task 1</p>
