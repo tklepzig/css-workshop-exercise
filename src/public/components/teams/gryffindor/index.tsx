@@ -30,11 +30,11 @@ export const Index = () => (
       <Skeleton className="relative -top-2 inline">2</Skeleton>
       <Skeleton className="inline">3</Skeleton>
     </>
-    <div className="w-1/2 border">
-      <Skeleton className="w-[33vw]">1/3</Skeleton>
-      <div className="inline">
-        <Skeleton className="w-[calc(100%-47px)]">Full</Skeleton>
-        <Skeleton className="w-[47px]">47px</Skeleton>
+    <div className="w-[50vw] border p-2">
+      <Skeleton className="w-[33vw]">1/3 of viewport width</Skeleton>
+      <div>
+        <Skeleton className="my-2 inline-block w-[calc(100%-47px)]">Full width minus 47px</Skeleton>
+        <Skeleton className="inline-block w-[47px]">47px</Skeleton>  
       </div>
     </div>
     <div className="block border p-2">
