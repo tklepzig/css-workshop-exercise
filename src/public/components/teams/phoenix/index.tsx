@@ -39,7 +39,16 @@ export const Exercise2 = () => (
 );
 
 export const Exercise3 = () => (
-  <div className="bg-ui-300 pl-7 h-[15em] w-[33.33vw] flex justify-end items-end">
-    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-  </div>
+  <>
+    Exercise 3
+    <div className="bg-ui-300 pl-7 h-[15em] w-[33.33vw] flex justify-end items-end">
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+    </div>
+    <div className="h-[80vh] flex gap-2 flex-col sm:flex-row sm:flex-wrap justify-evenly sm:items-center ">
+      {Array.from({ length: 30 }).map((_, i) => (
+        // eslint-disable-next-line react/jsx-key
+        <Skeleton>Item {i}</Skeleton>
+      ))}
+    </div>
+  </>
 );
