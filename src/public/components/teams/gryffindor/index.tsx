@@ -12,7 +12,11 @@ export const Index = () => (
   // <Exercise3Task1 />
   // <Exercise3Task2 />
   // <Exercise3Task3 />
-  <Exercise3Task4 />
+  // <Exercise3Task4 />
+  // <Exercise4Task1 />
+  // <Exercise4Task2 />
+  // <Exercise4Task3 />
+  <Exercise4Task4 />
 );
 
 const Exercise1Task1 = () => (
@@ -120,3 +124,51 @@ const Exercise3Task4 = () => (
     ))}
   </div>
 );
+
+
+const Exercise4Task1 = () => (
+  // eslint-disable-next-line tailwindcss/no-custom-classname
+  <div className="grid grid-cols-[10rem_1fr_auto] gap-3">
+    <img src="/assets/picture.jpg" alt="" className="row-span-3" />
+    <Skeleton />
+    <Skeleton className="w-[4rem]" />
+    <Skeleton className="col-span-2" />
+    <Skeleton className="col-span-2" />
+    <Skeleton className="col-span-2 col-start-2" />
+    <Skeleton className="col-span-2" />
+    <Skeleton />
+    <Skeleton />
+    <Skeleton className="col-span-2" />
+  </div>
+)
+
+const Exercise4Task2 = () => (
+  <div className="grid h-[80vh] items-center justify-items-start gap-2">
+    <Skeleton className=""> item 0</Skeleton>
+    <Skeleton>item 1</Skeleton>
+    <Skeleton className="justify-self-end">item 2</Skeleton>
+    <Skeleton className="justify-self-center">item 3</Skeleton>
+    <Skeleton className="justify-self-stretch">item 4</Skeleton>
+  </div>
+)
+
+
+const Exercise4Task3 = () => (
+  <div className="grid grid-flow-col grid-cols-[1fr_4fr_1fr_4fr_1fr] gap-2">
+    <Skeleton className="">0</Skeleton>
+    <Skeleton className="">1</Skeleton>
+    <Skeleton className="">2</Skeleton>
+    <Skeleton className="">3</Skeleton>
+    <Skeleton className="">4</Skeleton>
+  </div>
+)
+
+const Exercise4Task4 = () => (
+  <div className="grid h-[80vh] grid-cols-2">
+    <Skeleton>1</Skeleton>
+    <Skeleton>2</Skeleton>
+    <Skeleton>3</Skeleton>
+    <Skeleton>4</Skeleton>
+  </div>
+
+)
