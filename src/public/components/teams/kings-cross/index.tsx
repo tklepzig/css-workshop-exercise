@@ -94,5 +94,22 @@ export const Index = () => (
         My checkbox
       </span>
     </div>
+
+    <p> Exercise 2 - Task 5</p>
+
+    <div className="ml-3 w-[50vw] border">
+      <div className="group">
+        <header className="group-[:hover]:bg-ui-100">
+          The Tale of the Three Brothers
+        </header>
+        <p className="first-letter:text-3xl first-line:italic group-[:hover]:bg-ui-100">
+          Once upon a time there were three brothers that were walking down a
+          road at twilight. In time the brothers reached a river too treacherous
+          to pass, but they were talented in the magical arts and waved their
+          wands and made a bridge...
+        </p>
+        <footer>From: The Tales of Beedle the Bard</footer>
+      </div>
+    </div>
   </div>
 );
