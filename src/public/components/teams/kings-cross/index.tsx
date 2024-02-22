@@ -85,5 +85,14 @@ export const Index = () => (
         ))}
       </ul>
     </div>
+
+    <p> Exercise 2 - Task 5</p>
+
+    <div>
+      <input type="checkbox" className="peer" />
+      <span className="ml-1 peer-[:hover]:bg-ui-100 peer-[:checked]:font-bold">
+        My checkbox
+      </span>
+    </div>
   </div>
 );
