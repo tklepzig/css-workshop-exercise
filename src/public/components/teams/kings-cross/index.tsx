@@ -1,5 +1,5 @@
-import { cx } from "class-variance-authority"
-import { Skeleton } from "../../Skeleton"
+import { cx } from "class-variance-authority";
+import { Skeleton } from "../../Skeleton";
 
 export const Index = () => (
   <div>
@@ -12,7 +12,7 @@ export const Index = () => (
             key={i}
             className={cx(
               "px-1 py-3 odd:bg-ui-100",
-              i === 4 && "sticky top-0 "
+              i === 4 && "sticky top-0 ",
             )}
           >
             Item {i}
@@ -33,5 +33,13 @@ export const Index = () => (
       <Skeleton className="ml-[-0.5rem]" />
       <Skeleton />
     </div>
+
+    <p> Exercise 2 - Task 1</p>
+
+    <div className="relative mt-1">
+      <Skeleton className="inline-block px-3">1</Skeleton>
+      <Skeleton className="relative -top-2 ml-1 inline-block px-3">2</Skeleton>
+      <Skeleton className="ml-1 inline-block px-3">3</Skeleton>
+    </div>
   </div>
-)
+);
