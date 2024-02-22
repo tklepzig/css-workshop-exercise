@@ -29,5 +29,10 @@ export const Exercise2 = () => (
       </Skeleton>
       <Skeleton className="inline-block w-[47px]">47px</Skeleton>
     </div>
+    <div className="w-[50%] border-black border-2 p-2">
+      <Skeleton className="inline-block">Inline</Skeleton>
+      <Skeleton className="inline-block mx-[3rem]">Inline</Skeleton>
+      <Skeleton className="inline-block">Inline</Skeleton>
+    </div>
   </>
 );
