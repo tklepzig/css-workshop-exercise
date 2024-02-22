@@ -63,5 +63,27 @@ export const Index = () => (
         <span className="ml-6 bg-ui-300 p-4">Inline</span>
       </div>
     </div>
+
+    <p> Exercise 2 - Task 4</p>
+
+    <div>
+      <ul>
+        {Array.from({ length: 10 }).map((_, i) => (
+          // eslint-disable-next-line react/jsx-key
+          <li className="group first:font-bold first:text-error-100 has-[p]:bg-ui-200 ">
+            {i === 4 ? (
+              <div>
+                <span className="group-has-[p]:underline">
+                  Item {i} with Paragraph:
+                </span>
+                <p className="">Once upon a time...</p>
+              </div>
+            ) : (
+              <span>Item {i}</span>
+            )}
+          </li>
+        ))}
+      </ul>
+    </div>
   </div>
 );
