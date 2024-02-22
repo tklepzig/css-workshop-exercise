@@ -15,9 +15,19 @@ export const Index = () => (
 );
 
 export const Exercise2 = () => (
-  <div>
-    <Skeleton className="inline relative">1</Skeleton>
-    <Skeleton className="inline -top-2 relative">2</Skeleton>
-    <Skeleton className="inline relative">3</Skeleton>
-  </div>
+  <>
+    <h1>Exercise 2</h1>
+    <div>
+      <Skeleton className="inline relative">1</Skeleton>
+      <Skeleton className="inline -top-2 relative">2</Skeleton>
+      <Skeleton className="inline relative">3</Skeleton>
+    </div>
+    <div className="w-[50%] border-black border-2 p-2">
+      <Skeleton className="w-[33.33vw]">1/3 of viewport width</Skeleton>
+      <Skeleton className="inline-block w-[calc(100%-47px)]">
+        Full width minus 47px
+      </Skeleton>
+      <Skeleton className="inline-block w-[47px]">47px</Skeleton>
+    </div>
+  </>
 );
