@@ -2,6 +2,30 @@ import { cx } from "class-variance-authority";
 import { Skeleton } from "../../Skeleton";
 
 export const Index = () => (
+  <div className="flex h-[33vh] content-start justify-between border">
+    <Skeleton className="self-end">Item 0</Skeleton>
+    <Skeleton className="self-center">Item 1</Skeleton>
+    <Skeleton className="self-start">Item 2</Skeleton>
+    <Skeleton className="self-center">Item 3</Skeleton>
+    <Skeleton className="self-end">Item 4</Skeleton>
+  </div>
+);
+export const e3t2 = () => (
+  <div className="flex h-[80vh] flex-col content-start justify-between gap-2 overflow-auto md:flex-row md:flex-wrap">
+    {Array.from({ length: 30 }).map((_, i) => (
+      // eslint-disable-next-line react/jsx-key
+      <Skeleton>Item {i}</Skeleton>
+    ))}
+  </div>
+);
+
+export const e3t1 = () => (
+  <div className="flex h-[10rem] w-[33vw] items-end justify-end border p-2 pl-7">
+    This is a box whose text is bottom-right aligned and supports wrapping
+  </div>
+);
+
+export const Previous = () => (
   <div>
     <p>Excercise 1 / Task 1</p>
     <div className="flex flex-col">
