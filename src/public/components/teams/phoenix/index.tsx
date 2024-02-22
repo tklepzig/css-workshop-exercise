@@ -60,7 +60,7 @@ export const Exercise3 = () => (
       <Skeleton className="self-end">Item 4</Skeleton>
     </div>
     Task 4
-    <div className="h-[80vh] flex-col md:flex-row md:justify-end">
+    <div className="flex h-[80vh] flex-col md:flex-row md:justify-end md:items-start">
       {Array.from({ length: 10 }).map((_, i) => (
         // eslint-disable-next-line react/jsx-key
         <Skeleton>Item {i}</Skeleton>
