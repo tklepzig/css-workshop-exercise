@@ -96,6 +96,31 @@ const E3T4 = () => (
   </div>
 );
 
+const E4T1 = () => (
+  <div className='grid grid-cols-[10rem_1fr_4rem] gap-3 auto-rows-fr'>
+    <img src="/assets/picture.jpg" alt="" className='row-span-3' />
+    <Skeleton/>
+    <Skeleton />
+    <Skeleton className='col-span-2 col-start-2'/>
+    <Skeleton className='col-span-2 col-start-2'/>
+    <Skeleton className='col-span-2 col-start-2'/>
+    <Skeleton className='col-span-2'/>
+    <Skeleton />
+    <Skeleton />
+    <Skeleton className='col-span-2' />
+  </div>
+);
+
+const E4T2 = () => (
+  <div className='grid h-[80vh] border grid-cols-[auto_1fr_auto_1fr_auto] grid-rows-[repeat(5,1fr)] items-center'>
+    <Skeleton className='row-start-1'>Item 0</Skeleton>
+    <Skeleton className='row-start-2'>Item 1</Skeleton>
+    <Skeleton className='row-start-3 col-start-5'>Item 2</Skeleton>
+    <Skeleton className='row-start-4 col-start-3'>Item 3</Skeleton>
+    <Skeleton className='row-start-5 col-span-5'>Item 4</Skeleton>
+  </div>
+)
+
 export const Index = () => (
   <>
     <h1>Exercise 1</h1>
@@ -120,5 +145,11 @@ export const Index = () => (
     <E3T3 />
     <h2>Task 4</h2>
     <E3T4 />
+
+    <h1>Exercise 4</h1>
+    <h2>Task 1</h2>
+    <E4T1 />
+    <h2>Task 2</h2>
+    <E4T2 />
   </>
 );
