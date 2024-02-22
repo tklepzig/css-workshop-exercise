@@ -6,8 +6,8 @@ export const List = () => {
     <li
       className={cx(
         "py-2 pl-2",
+        "even:bg-ui-0 odd:bg-heatmap-heat-30",
         i === 3 && "sticky top-0",
-        i & 1 ? "bg-ui-0" : "bg-heatmap-heat-30",
       )}
     >
       Item {i}
