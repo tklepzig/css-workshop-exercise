@@ -1,5 +1,5 @@
-import { cx } from "class-variance-authority";
-import { Skeleton } from "../../Skeleton";
+import { cx } from "class-variance-authority"
+import { Skeleton } from "../../Skeleton"
 
 export const Index = () => (
   <div>
@@ -12,7 +12,7 @@ export const Index = () => (
             key={i}
             className={cx(
               "px-1 py-3 odd:bg-ui-100",
-              i === 4 && "sticky top-0 ",
+              i === 4 && "sticky top-0 "
             )}
           >
             Item {i}
@@ -111,5 +111,24 @@ export const Index = () => (
         <footer>From: The Tales of Beedle the Bard</footer>
       </div>
     </div>
+
+    <p> Exercise 3 - Task 1 </p>
+
+    <div>
+      <div className="flex h-[20rem] w-[33vw] items-end justify-end border pl-7">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+      </div>
+    </div>
+
+    <p> Exercise 4 - Task 2</p>
+
+    <div className="border">
+      <div className="flex h-[80vh] flex-col gap-2 sm:flex-row sm:flex-wrap sm:items-center sm:justify-between">
+        {Array.from({ length: 30 }).map((_, i) => (
+          // eslint-disable-next-line react/jsx-key
+          <Skeleton>Item {i}</Skeleton>
+        ))}
+      </div>
+    </div>
   </div>
-);
+)
