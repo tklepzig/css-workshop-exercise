@@ -59,5 +59,12 @@ export const Exercise3 = () => (
       <Skeleton>Item 3</Skeleton>
       <Skeleton className="self-end">Item 4</Skeleton>
     </div>
+    Task 4
+    <div className="h-[80vh] flex-col md:flex-row md:justify-end">
+      {Array.from({ length: 10 }).map((_, i) => (
+        // eslint-disable-next-line react/jsx-key
+        <Skeleton>Item {i}</Skeleton>
+      ))}
+    </div>
   </>
 );
