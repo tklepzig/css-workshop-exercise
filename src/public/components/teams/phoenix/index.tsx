@@ -11,6 +11,7 @@ export const Index = () => (
       </ul>
     </div>
     <Exercise2 />
+    <Exercise3 />
   </>
 );
 
@@ -35,4 +36,10 @@ export const Exercise2 = () => (
       <Skeleton className="inline-block">Inline</Skeleton>
     </div>
   </>
+);
+
+export const Exercise3 = () => (
+  <div className="bg-ui-300 pl-7 h-[15em] w-[33.33vw] flex justify-end items-end">
+    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+  </div>
 );
