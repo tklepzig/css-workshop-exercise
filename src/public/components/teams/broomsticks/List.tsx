@@ -15,7 +15,7 @@ export const List = () => {
   ));
 
   return (
-    <div className="h-[10rem] w-[33%] overflow-auto">
+    <div className="h-[10rem] w-1/3 overflow-auto">
       <ul>{listItems}</ul>
     </div>
   );
