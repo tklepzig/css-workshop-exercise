@@ -2,6 +2,49 @@ import { cx } from "class-variance-authority";
 import { Skeleton } from "../../Skeleton";
 
 export const Index = () => (
+  <div className="grid h-[50vh] grid-cols-[5rem_5rem] grid-rows-[5rem_5rem] content-end items-start justify-center">
+    <Skeleton>1</Skeleton>
+    <Skeleton>2</Skeleton>
+    <Skeleton>3</Skeleton>
+    <Skeleton>4</Skeleton>
+  </div>
+);
+
+export const e4t4 = () => (
+  <div className="grid auto-cols-[auto_1fr] grid-flow-col gap-3 p-3">
+    {Array.from({ length: 7 }).map((_, i) => (
+      // eslint-disable-next-line react/jsx-key
+      <Skeleton>Item {i}</Skeleton>
+    ))}
+  </div>
+);
+
+export const e4t2 = () => (
+  <div className="grid h-[60vh] grid-cols-3 content-evenly justify-start border">
+    <Skeleton className="col-start-1 row-start-1">Item 0</Skeleton>
+    <Skeleton className="col-start-1 row-start-2">Item 1</Skeleton>
+    <Skeleton className="col-start-3 row-start-3">Item 2</Skeleton>
+    <Skeleton className="col-start-2 row-start-4">Item 3</Skeleton>
+    <Skeleton className="col-span-3 row-start-5">Item 4</Skeleton>
+  </div>
+);
+
+export const e4t1 = () => (
+  <div className="grid grid-cols-[10rem_1fr_4rem] gap-3 bg-ui-200 p-3">
+    <img className="row-span-4" src="/assets/picture.jpg" alt="" />
+    <Skeleton />
+    <Skeleton />
+    <Skeleton className="col-span-2" />
+    <Skeleton className="col-span-2" />
+    <Skeleton className="col-span-2" />
+    <Skeleton className="col-span-2" />
+    <Skeleton />
+    <Skeleton />
+    <Skeleton className="col-span-2" />
+  </div>
+);
+
+export const e3t3 = () => (
   <div className="flex h-[33vh] content-start justify-between border">
     <Skeleton className="self-end">Item 0</Skeleton>
     <Skeleton className="self-center">Item 1</Skeleton>
