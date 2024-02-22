@@ -31,11 +31,9 @@ export const Index = () => (
       <Skeleton className="inline">3</Skeleton>
     </>
     <div className="w-[50vw] border p-2">
-      <Skeleton className="w-[33vw]">1/3 of viewport width</Skeleton>
-      <div>
-        <Skeleton className="my-2 inline-block w-[calc(100%-47px)]">Full width minus 47px</Skeleton>
-        <Skeleton className="inline-block w-[47px]">47px</Skeleton>  
-      </div>
+      <Skeleton className="mb-2 w-[33vw]">1/3 of viewport width</Skeleton>
+      <Skeleton className="inline-block w-[calc(100%-47px)]">Full width minus 47px</Skeleton>
+      <Skeleton className="inline-block w-[47px]">47px</Skeleton>  
     </div>
     <div className="block border p-2">
       <Skeleton className="m-4 inline p-5">Inline</Skeleton>
@@ -57,5 +55,31 @@ export const Index = () => (
         </li>
       ))}
     </ul>
+
+    <div className="flex h-[20rem] w-1/3 flex-wrap content-end border pl-7">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+    </div>
+
+    <div className="flex h-[80vh] flex-col gap-2 sm:flex-row sm:flex-wrap sm:items-center sm:justify-between">
+      {Array.from({ length: 30 }).map((_, i) => (
+        // eslint-disable-next-line react/jsx-key
+        <Skeleton>Item {i}</Skeleton>
+      ))}
+    </div>
+
+    <div className="flex h-[33vh] items-center justify-between border">
+      <Skeleton className="self-end">Item 0</Skeleton>
+      <Skeleton>Item 1</Skeleton>
+      <Skeleton className="self-start">Item 2 </Skeleton>
+      <Skeleton>Item 3</Skeleton>
+      <Skeleton className="self-end">Item 4</Skeleton>
+    </div>
+
+    <div className="flex h-[80vh] flex-col gap-2 md:flex-row md:items-start md:justify-end">
+      {Array.from({ length: 10 }).map((_, i) => (
+        // eslint-disable-next-line react/jsx-key
+        <Skeleton>Item {i}</Skeleton>
+      ))}
+    </div>
   </>
 );
