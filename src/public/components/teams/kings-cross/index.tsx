@@ -41,5 +41,17 @@ export const Index = () => (
       <Skeleton className="relative -top-2 ml-1 inline-block px-3">2</Skeleton>
       <Skeleton className="ml-1 inline-block px-3">3</Skeleton>
     </div>
+
+    <p> Exercise 2 - Task 2</p>
+
+    <div>
+      <div className="w-[50vw] border p-2">
+        <Skeleton className="mb-1 w-[33vw]">1/3 of viewport width</Skeleton>
+        <Skeleton className="inline-block w-[calc(100%-47px)]">
+          Full width minus 47px
+        </Skeleton>
+        <Skeleton className="inline-block w-[47px]">47</Skeleton>
+      </div>
+    </div>
   </div>
 );
