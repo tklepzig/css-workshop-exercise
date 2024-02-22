@@ -53,5 +53,15 @@ export const Index = () => (
         <Skeleton className="inline-block w-[47px]">47</Skeleton>
       </div>
     </div>
+
+    <p> Exercise 2 - Task 3</p>
+
+    <div className="my-4">
+      <div className=" border p-2">
+        <span className="bg-ui-300 p-4">Inline</span>
+        <span className="ml-6 bg-ui-300 p-4">Inline</span>
+        <span className="ml-6 bg-ui-300 p-4">Inline</span>
+      </div>
+    </div>
   </div>
 );
