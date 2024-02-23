@@ -1,0 +1,12 @@
+.myGrid {
+  display: grid;
+  gap: 1rem;
+  grid:
+    "pic a1 a2" 1fr
+    "pic b b" 1fr
+    "pic c c" 1fr
+    ". d d" 1fr
+    "e1 e1 e2" 1fr
+    "f1 f2 f2" 1fr
+    / 10rem 1fr auto;
+}
